@@ -185,7 +185,7 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 3px;
   pointer-events: none;
   outline: 2px solid var(--accent-color);
   outline-offset: -2px;
@@ -208,16 +208,16 @@
   -webkit-text-stroke: 1px var(--outline-color);
 }
 
-.vintage-look {
-  filter: sepia(0.7) contrast(0.8);
+.saturation {
+  filter: saturate(150%);
+}
+
+.contrast {
+filter: contrast(120%);
 }
 
 .dreamy-blur {
   filter: blur(4px) brightness(0.9);
-}
-
-.cold-contrast {
-  filter: contrast(1.5) hue-rotate(200deg);
 }
 
 .warmth {
@@ -237,7 +237,7 @@
 }
 
 .mystery-shadow {
-  filter: brightness(0.5) contrast(1.5) blur(2px);
+  filter: brightness(1) contrast(1.5) blur(2px);
 }
 
 @supports not (-webkit-text-stroke: 1px var(--outline-color)) {
