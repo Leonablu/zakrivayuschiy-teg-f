@@ -4,9 +4,10 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
 :root.theme-light {
-  --main-background: #ffffff;
-  --outline-color: #FFFFFF;
+  --main-background: #fff;
+  --outline-color: #fff;
   --background-image: repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
@@ -14,17 +15,17 @@
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --accent-color: #000000;
-  --text-color-button: #ffffff;
+  --accent-color: #000;
+  --text-color-button: #fff;
   --font-weight-main: 400;
   --font-weight-title: 700;
-  --color-icon: #FF0000;
-  --icon-hover-color:#000000;
+  --color-icon: #f00;
+  --icon-hover-color: #000;
 }
 
 :root.theme-dark {
-  --main-background: #000000;
-  --outline-color: #000000;
+  --main-background: #000;
+  --outline-color: #000;
   --background-image: repeating-linear-gradient(
       to right,
       #000 0 2px,
@@ -36,20 +37,21 @@
   --text-color-button: #00cc14;
   --font-weight-main: 465;
   --font-weight-title: 785;
-  --color-icon: #FF0000;
-  --icon-hover-color:#00cc14;
+  --color-icon: #f00;
+  --icon-hover-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
+
   :root {
-    --main-background: #000000;
-    --outline-color: #000000;
+    --main-background: #000;
+    --outline-color: #000;
     --accent-color: #00cc14;
     --text-color-button: #00cc14;
     --font-weight-main: 465;
     --font-weight-title: 785;
-    --color-icon: #FF0000;
-    --icon-hover-color:#00cc14;
+    --color-icon: #f00;
+    --icon-hover-color: #00cc14;
     --background-image: repeating-linear-gradient(
         to right,
         #000 0 2px,
