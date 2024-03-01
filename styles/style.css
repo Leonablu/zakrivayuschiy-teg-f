@@ -15,9 +15,9 @@
 */
 
 .page {
-      display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: var(--accent-color);
   font-family: var(--main-font, sans-serif);
   background-color: var(--main-background);
@@ -40,6 +40,7 @@
   outline-offset: -2px;
   font-family: var(--accent-font, system-ui);
   background-color: var(--main-background);
+  min-width: 371px;
 }
 
 .header--width {
@@ -150,12 +151,12 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
-  pointer-events: none;
+  left: 0;
   outline: 2px solid var(--accent-color);
   outline-offset: -2px;
+  pointer-events: none;
 }
 
 .card-section__title {
@@ -186,12 +187,12 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 3px;
-  pointer-events: none;
+  left: 0;
   outline: 2px solid var(--accent-color);
   outline-offset: -2px;
+  pointer-events: none;
 }
 
 .image-text {
@@ -216,7 +217,7 @@
 }
 
 .contrast {
-filter: contrast(120%);
+  filter: contrast(120%);
 }
 
 .dreamy-blur {
@@ -517,7 +518,6 @@ filter: contrast(120%);
 }
 
 @media (width >= 376px) {
- 
   .header {
     align-self: center;
     max-width: 696px;
