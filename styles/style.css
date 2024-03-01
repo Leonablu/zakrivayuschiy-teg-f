@@ -15,6 +15,9 @@
 */
 
 .page {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
   color: var(--accent-color);
   font-family: var(--main-font, sans-serif);
   background-color: var(--main-background);
@@ -514,12 +517,7 @@ filter: contrast(120%);
 }
 
 @media (width >= 376px) {
-  .page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
+ 
   .header {
     align-self: center;
     max-width: 696px;
