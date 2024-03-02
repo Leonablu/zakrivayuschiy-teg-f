@@ -147,11 +147,11 @@
 }
 
 .image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  display: block;
 }
 
 .image-text {
@@ -212,9 +212,9 @@
 }
 
 .article {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
   outline: 2px solid var(--accent-color);
   outline-offset: -2px;
   background-color: var(--main-background);
