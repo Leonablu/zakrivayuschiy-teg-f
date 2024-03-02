@@ -59,7 +59,7 @@
 
 .header__title {
   justify-self: center;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   font-weight: 400;
   font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
   line-height: 14px;
@@ -70,8 +70,8 @@
   position: relative;
   justify-self: center;
   align-self: flex-start;
-  padding-bottom: clamp(27px, 6.45vw, 30px);
-  padding-left: clamp(15px, 6.45vw, 12px);
+  padding-bottom: clamp(27px, 0.00282 * (100vw - 375px) + 27px, 30px);
+  padding-left: clamp(12px, 0.2vw + 12px, 15px);
 }
 
 .theme-menu__list {
@@ -137,26 +137,6 @@
 .main {
   display: grid;
   gap: 50px;
-}
-
-.card-list {
-  display: grid;
-  gap: 45px;
-}
-
-.card-section {
-  position: relative;
-  outline: 2px solid var(--accent-color);
-  outline-offset: -2px;
-  background-color: var(--main-background);
-}
-
-.card-section__title {
-  padding: 6px 11px 3px 12px;
-  font-family: var(--main-font, Arial, sans-serif);
-  font-size: 18px;
-  line-height: 22px;
-  font-variation-settings: "wght" var(--font-weight-title);
 }
 
 .image-wrapper {
@@ -234,15 +214,30 @@
 .article {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  position: relative;
+  outline: 2px solid var(--accent-color);
+  outline-offset: -2px;
+  background-color: var(--main-background);
+}
+
+.article__title {
+  padding: 6px 11px 3px 12px;
+  font-family: var(--main-font, Arial, sans-serif);
+  font-size: 18px;
+  line-height: 22px;
+  font-variation-settings: "wght" var(--font-weight-title);
 }
 
 .article__text {
-  padding: 5px 25px 1px 25px;
+  padding: 25px;
   font-family: var(--main-font, Arial, sans-serif);
   font-size: 18px;
   line-height: 21px;
   font-variation-settings: "wght" var(--font-weight-main);
+}
+
+.article__text:last-of-type {
+  padding: 0px 25px 25px 25px;
 }
 
 .card {
@@ -482,25 +477,13 @@
     max-width: 698px;
   }
 
-  .card-list {
-    gap: 50px;
-  }
-
-  .card-section__title {
-    padding: 5px 10px 3px;
+  .article__title {
+    padding: 6px 15px 6px 11px;
   }
 
   .image-text {
     top: 30px;
     right: 26px;
-  }
-
-  .article {
-    gap: 25px;
-  }
-
-  .article__text {
-    padding: 1px 25px 1px 25px;
   }
 
   .floppy-button {
