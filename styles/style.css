@@ -219,8 +219,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  outline: 2px solid var(--accent-color);
-  outline-offset: -2px;
+  outline: 3px solid var(--accent-color);
+  outline-offset: -3px;
   background-color: var(--main-background);
 }
 
@@ -250,7 +250,7 @@
   justify-content: flex-end;
   gap: 5px;
   margin-inline-end: 27px;
-  margin-block-end: 28px;
+  margin-block-end: 27px;
 }
 
 .button {
@@ -289,7 +289,7 @@
 .card__like-button {
   min-width: 130px;
   min-height: 38px;
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .button__text {
@@ -472,7 +472,7 @@
 
   .main {
     align-self: center;
-    max-width: 699px;
+    max-width: 700px;
   }
 
   .article__title {
