@@ -219,8 +219,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  outline: 3px solid var(--accent-color);
-  outline-offset: -3px;
+  outline: 2px solid var(--accent-color);
+  outline-offset: -2px;
   background-color: var(--main-background);
 }
 
