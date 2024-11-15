@@ -24,4 +24,5 @@
    git clone https://github.com/Leonablu/zakrivayuschiy-teg-f.git
    cd zakrivayuschiy-teg-f
 2. Для запуска проекта в браузере откройте файл index.html:
-- open index.html
+   ```bash
+   open index.html
